@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 400px;
+  margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  background-color: blueviolet;
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: repeat-x;
+}
+
+h1 {
+  color: white;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: 400;
+}
+.ip-form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.submit-button {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 15%;
+  height: 70px;
+  display: inline-block;
+  background: black url("./images/icon-arrow.svg") no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: rgb(58, 56, 56);
+}
+input {
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 70px;
+  width: 85%;
+  font-size: 18px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.ip-details {
+  background-color: white;
+  height: 350px;
+  width: 80%;
+  border-radius: 20px;
+  margin: -80px auto;
+  padding-top: 15px;
+  position: absolute;
+  z-index: 9999;
+  left: 70px;
+}
+
+.detail {
+  margin: 0 auto;
+  text-align: center;
+}
+.detail p {
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.detail h2 {
+  margin: 0 auto;
+  margin-top: 10px;
+  color: hsl(0, 0%, 17%);
+  max-width: 90%;
+  text-align: center;
+}
+
+.leaflet-container {
+  margin-top: 106px;
+
+  width: 100vw;
+  height: 100vh;
+
+  /* position: relative;
+  bottom: 136px; */
+  /* z-index: -999; */
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+  .ip-form {
+    width: 50%;
+  }
+
+  .ip-details {
+    display: flex;
+    width: 90%;
+    height: 180px;
+    align-content: center;
+    /* min-width: 1200px; */
+  }
+
+  .detail {
+    align-self: center;
+  }
+  .detail:not(:nth-child(1)) {
+    border-left: 2px hsl(0, 0%, 59%) solid;
+    height: 90px;
+    padding-left: 15px;
+  }
+
+  .detail p,
+  h2 {
+    text-align: left;
+  }
+  .detail h2 {
+    max-width: 100%;
+  }
+}
