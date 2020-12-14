@@ -12,7 +12,7 @@ body {
   min-width: 400px;
   margin: 0 auto;
   font-family: "Rubik", sans-serif;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   background-image: url("./images/pattern-bg.png");
   background-repeat: repeat-x;
 }

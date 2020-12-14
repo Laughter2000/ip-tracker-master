@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
 import L from "leaflet";
 import { MapContainer, Marker, TileLayer } from "react-leaflet"; //eslint-disable-line
 
@@ -16,7 +15,7 @@ const locationIcon = L.icon({
 });
 
 const Maps = ({ lat, lng }) => {
-  return render(
+  return (
     <MapContainer center={[lat, lng]} zoom={13}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
